@@ -3,6 +3,7 @@ import time
 
 import RPi.GPIO as GPIO #WirePI
 
+GPIO.setwarnings(False)
 
 # See https://sourceforge.net/p/raspberry-gpio-python/wiki/BasicUsage/
 GPIO_MODE = GPIO.BOARD # GPIO.BCM
