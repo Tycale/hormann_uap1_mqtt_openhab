@@ -32,3 +32,6 @@ Launch alone UAP1States.py to monitor the states of your door during 60 secondes
 
 Launch alone UAP1Actions.py to switch on the light, then slightly open the door.
 
+## Openhab icons
+
+Copy folder "icons/classic" into "/etc/openhab2/icons/classic"
