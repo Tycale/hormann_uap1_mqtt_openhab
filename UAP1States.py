@@ -14,11 +14,11 @@ STATE_UNKNOWN, STATE_CLOSED, STATE_OPEN, STATE_SLIGHTLY_OPEN, STATE_MOVING = ran
 DOOR_STATE_TO_STR = { STATE_UNKNOWN: 'Unknown state',
               STATE_CLOSED: 'Closed',
               STATE_OPEN: 'Open',
-              STATE_SLIGHTLY_OPEN: 'Slightly open',
+              STATE_SLIGHTLY_OPEN: 'Slightly',
               STATE_MOVING: 'Moving'}
 OFF = False
 ON = True
-LIGHT_STATE_TO_STR = { ON: 'On', OFF: 'Off', None: 'Unknown state' }
+LIGHT_STATE_TO_STR = { ON: 'ON', OFF: 'OFF', None: 'Unknown state' }
 
 class UAP1States:
     def __init__(self, GPIO_light, GPIO_down, GPIO_up):
