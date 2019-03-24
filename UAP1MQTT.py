@@ -93,7 +93,7 @@ while rc == 0:
         last_door_state = door_state
         print("[{}] publishing new door state {}".format(fmt_date, ustates.get_str_door()))
         mqttc.publish(topic_status_door, ustates.get_str_door())
-    if last_light_state != light_state or curr_time - last_door_update > UPDATE_TIME or force_update:
+    if last_light_state != light_state or curr_time - last_light_update > UPDATE_TIME or force_update:
         last_light_update = time.time()
         last_light_state = light_state
         print("[{}] publishing new light state {}".format(fmt_date, ustates.get_str_light()))
