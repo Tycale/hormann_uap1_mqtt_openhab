@@ -79,8 +79,8 @@ mqttc.subscribe(topic_command_door, qos=0)
 rc = 0
 last_door_state = None
 last_light_state = None
-last_light_update = None
-last_door_update = None
+last_light_update = time.time() - UPDATE_TIME
+last_door_update = time.time() - UPDATE_TIME
 force_update = False
 
 while rc == 0:
