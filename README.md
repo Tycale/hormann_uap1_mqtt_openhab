@@ -37,20 +37,20 @@ Launch alone UAP1Actions.py to switch on the light, then slightly open the door.
 UAP1MQTT.py takes care of communicate the state of the door and of the
 light of the motor via resp. MQTT topics:
 
- - state/${MQTT\_CLIENTID}/door
- - state/${MQTT\_CLIENTID}/light
+ - `state/${MQTT\_CLIENTID}/door`
+ - `state/${MQTT\_CLIENTID}/light`
 
 Plus, it executes commands received on:
 
- - command/${MQTT\_CLIENTID}/door allows messages: CLOSE, OPEN, SLIGHT
- - command/${MQTT\_CLIENTID}/light allows messages : ON, OFF
+ - `command/${MQTT\_CLIENTID}/door` allows messages: CLOSE, OPEN, SLIGHT
+ - `command/${MQTT\_CLIENTID}/light` allows messages : ON, OFF
 
 Following parameters can be set via global environment variables :
 
- - ${MQTT\_SERVER} for the server URI (e.g. "mqtt://10.8.0.42:1883")
- - ${MQTT\_USERNAME} for authenticate on the MQTT\_SEVER, can be null
- - ${MQTT\_PASSWORD} for authenticate on the MQTT\_SEVER, can be null
- - ${MQTT\_CLIENT\_ID} identifies the MQTT client and the door (part of the
+ - `${MQTT\_SERVER}` for the server URI (e.g. "mqtt://10.8.0.42:1883")
+ - `${MQTT\_USERNAME}` for authenticate on the MQTT\_SEVER, can be null
+ - `${MQTT\_PASSWORD}` for authenticate on the MQTT\_SEVER, can be null
+ - `${MQTT\_CLIENT\_ID}` identifies the MQTT client and the door (part of the
 topic)
 
 UAP1MQTT.py is the main file to launch.
