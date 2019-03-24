@@ -1,0 +1,16 @@
+[Unit]
+Description=UAP1 over MQTT
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /path/to/UAP1MQTT.py
+Environment=MQTT_SERVER=..
+Environment=MQTT_USERNAME=..
+Environment=MQTT_PASSWORD=..
+Environment=MQTT_CLIENT_ID=..
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

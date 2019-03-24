@@ -57,6 +57,23 @@ topic)
 
 UAP1MQTT.py is the main file to launch.
 
+## SystemD integration
+
+Modify the sample file with good path and global env. variables :
+```
+cp uap1.service.sample uap1.service
+```
+
+Copy the service to the systemd folder and activate it:
+```
+cp uap1.service /etc/systemd/system/
+systemctl enable uap1
+systemctl start uap1
+systemctl status uap1
+```
+
+This piece of software will be launch at the boot time now.
+
 ## Openhab integration
 
 Copy/modify files under the folder "openhab" inside your openhab installation. You will need the MQTT Openhab MQTT 1.x module and the translation module.
