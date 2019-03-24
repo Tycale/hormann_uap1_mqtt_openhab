@@ -1,7 +1,9 @@
 # Hörmann UAP1 MQTT with RaspberryPi
 
+This project works for any garage door compatible with the UAP1 module from Hörmann.
+
 Requirements:
- - RaspberryPi Zero W
+ - RaspberryPi (I am using a "Rpi Zero W")
  - Hormann UAP1 module
  - 4 Relays
 
