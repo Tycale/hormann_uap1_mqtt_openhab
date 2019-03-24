@@ -1,0 +1,5 @@
+rule "Garage interactions"
+when Item garage_status changed
+then
+sendBroadcastNotification("The garage door is " + garage_status.state + " !", "garagedoor")
+end

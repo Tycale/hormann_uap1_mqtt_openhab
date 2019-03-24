@@ -1,0 +1,6 @@
+Frame label="Garage" {
+    Text item=garage_status icon="garagedoor" label="Porte garage [MAP(garage_fr.map):%s]"
+    Switch item=garage_door_open icon="garagedooropen" label="Ouvrir garage" mappings=[OPEN="ouvrir",SLIGHT="ventiler"]
+    Switch item=garage_door_close icon="garagedoorclose" label="Fermer garage" mappings=[CLOSE="fermer"]
+    Switch item=garage_door_light icon="light" label="Lampe moteur garage"
+}

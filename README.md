@@ -57,7 +57,11 @@ topic)
 
 UAP1MQTT.py is the main file to launch.
 
-## Openhab icons
+## Openhab integration
+
+Copy/modify files under the folder "openhab" inside your openhab installation. You will need the MQTT Openhab MQTT 1.x module and the translation module.
+
+### Openhab icons
 
 Copy folder "icons/classic" into "/etc/openhab2/icons/classic"
  

@@ -1,0 +1,4 @@
+String garage_status "Garage state [%s]" {mqtt="<[mosquitto:state/garagedoor/door:state:default:.*]"}
+Switch garage_door_light "lampe moteur garage" {mqtt="<[mosquitto:state/garagedoor/light:state:default:.*], >[mosquitto:command/garagedoor/light:command:*:default]"}
+String garage_door_open "Open garage door" {mqtt=">[mosquitto:command/garagedoor/door:command:OPEN:OPEN], >[mosquitto:command/garagedoor/door:command:SLIGHT:SLIGHT]", autoupdate="false"}
+String garage_door_close "Close garage door" {mqtt=">[mosquitto:command/garagedoor/door:command:CLOSE:CLOSE]", autoupdate="false"}
