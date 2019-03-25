@@ -11,14 +11,14 @@ GPIO_MODE = GPIO.BOARD # GPIO.BCM
 DOOR_MAX_MOVING_TIME = 30
 
 STATE_UNKNOWN, STATE_CLOSED, STATE_OPEN, STATE_SLIGHTLY_OPEN, STATE_MOVING = range(5)
-DOOR_STATE_TO_STR = { STATE_UNKNOWN: 'Unknown state',
+DOOR_STATE_TO_STR = { STATE_UNKNOWN: 'Unknown',
               STATE_CLOSED: 'Closed',
               STATE_OPEN: 'Open',
               STATE_SLIGHTLY_OPEN: 'Slightly',
               STATE_MOVING: 'Moving'}
 OFF = False
 ON = True
-LIGHT_STATE_TO_STR = { ON: 'ON', OFF: 'OFF', None: 'Unknown state' }
+LIGHT_STATE_TO_STR = { ON: 'ON', OFF: 'OFF', None: 'Unknown' }
 
 class UAP1States:
     def __init__(self, GPIO_light, GPIO_down, GPIO_up):
