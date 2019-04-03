@@ -83,6 +83,7 @@ last_light_update = time.time() - UPDATE_TIME
 last_door_update = time.time() - UPDATE_TIME
 force_update = False
 
+time.sleep(1)
 while rc == 0:
     door_state = ustates.get_door()
     light_state = ustates.get_light()
